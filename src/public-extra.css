@@ -661,3 +661,258 @@ body[data-page="contact"] .header {
   margin-left: 0 !important;
   white-space: nowrap !important;
 }
+
+/* ===== FOOTER LOGO — KEEP ORIGINAL PROPORTIONS ===== */
+
+.footer .md-mark {
+  width: 70px !important;
+  height: 50px !important;
+  flex: 0 0 70px !important;
+  overflow: visible !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: transparent !important;
+}
+
+.footer .md-mark img {
+  width: 70px !important;
+  height: auto !important;
+  max-width: 70px !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  transform: none !important;
+  mix-blend-mode: screen !important;
+}
+
+/* ===== FINAL HEADER SOCIALS ===== */
+
+.header-socials {
+  display: flex !important;
+  align-items: center !important;
+  gap: 20px !important;
+  margin-left: auto !important;
+  margin-right: 28px !important;
+}
+
+.header-social {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 7px !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 0.78rem !important;
+  font-weight: 500 !important;
+  line-height: 1 !important;
+}
+
+.header-social img {
+  width: 30px !important;
+  height: 30px !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+.header-social:hover {
+  color: #bf00ff !important;
+}
+
+.header-social:hover img {
+  transform: scale(1.06) !important;
+}
+
+/* Footer logo uses the same MD-only asset without header cropping */
+.footer .md-mark {
+  width: 72px !important;
+  height: 52px !important;
+  flex: 0 0 72px !important;
+  overflow: visible !important;
+  background: transparent !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.footer .md-mark img {
+  width: 72px !important;
+  height: auto !important;
+  max-width: 72px !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  transform: none !important;
+  display: block !important;
+  mix-blend-mode: screen !important;
+}
+
+/* =========================================================
+   FINAL FOOTER LOGO FIX
+   ========================================================= */
+
+.footer .brand-lockup .md-mark {
+  width: 82px !important;
+  height: 54px !important;
+  flex: 0 0 82px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  position: static !important;
+  overflow: visible !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.footer .brand-lockup .md-mark img {
+  position: static !important;
+
+  width: 82px !important;
+  height: auto !important;
+
+  max-width: 82px !important;
+  max-height: none !important;
+
+  display: block !important;
+  object-fit: contain !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  transform: none !important;
+  mix-blend-mode: screen !important;
+}
+
+/* ===== FINAL FOOTER FIX ===== */
+
+.footer .brand-lockup {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+}
+
+.footer .brand-lockup .md-mark {
+  width: 82px !important;
+  height: 54px !important;
+  flex: 0 0 82px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  position: relative !important;
+  background: transparent !important;
+}
+
+.footer .brand-lockup .md-mark img {
+  width: 82px !important;
+  height: 82px !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  display: block !important;
+  transform: translateY(-8px) !important;
+  mix-blend-mode: screen !important;
+}
+
+.footer .brand-lockup .brand-name {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+  width: max-content !important;
+  min-width: max-content !important;
+  white-space: nowrap !important;
+}
+
+
+/* ===== FINAL FOOTER FIX ===== */
+
+.footer .brand-lockup {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+}
+
+.footer .brand-lockup .md-mark {
+  width: 82px !important;
+  height: 54px !important;
+  flex: 0 0 82px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  position: relative !important;
+  background: transparent !important;
+}
+
+.footer .brand-lockup .md-mark img {
+  width: 82px !important;
+  height: 82px !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  display: block !important;
+  transform: translateY(-8px) !important;
+  mix-blend-mode: screen !important;
+}
+
+.footer .brand-lockup .brand-name {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+  width: max-content !important;
+  min-width: max-content !important;
+  white-space: nowrap !important;
+}
+
+
+/* =========================================================
+   FINAL FOOTER LOGO — SAME CLEAN MD AS HEADER
+   ========================================================= */
+
+.footer .md-mark {
+  width: 82px !important;
+  height: 54px !important;
+  flex: 0 0 82px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  position: static !important;
+  overflow: visible !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.footer .md-mark img {
+  position: static !important;
+
+  width: 82px !important;
+  height: auto !important;
+
+  max-width: 82px !important;
+  max-height: none !important;
+
+  display: block !important;
+  object-fit: contain !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  transform: none !important;
+  mix-blend-mode: screen !important;
+}
+ .footer .brand-lockup .md-mark{width:82px!important;height:54px!important;flex:0 0 82px!important;overflow:hidden!important;display:flex!important;align-items:center!important;justify-content:center!important;background:transparent!important;margin:0!important;padding:0!important}.footer .brand-lockup .md-mark img{width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;object-fit:contain!important;display:block!important;position:static!important;transform:none!important;mix-blend-mode:normal!important;margin:0!important;padding:0!important} 
+.shop-footer .footer-brand .md-mark{width:82px!important;height:54px!important;flex:0 0 82px!important;display:flex!important;align-items:center!important;justify-content:center!important;overflow:hidden!important;position:relative!important;background:transparent!important;padding:0!important;margin:0!important}.shop-footer .footer-brand .md-mark img{position:static!important;width:82px!important;height:auto!important;max-width:82px!important;max-height:none!important;object-fit:contain!important;object-position:center!important;display:block!important;transform:none!important;mix-blend-mode:normal!important;padding:0!important;margin:0!important}
+.shop-footer .footer-brand{display:flex!important;align-items:center!important;gap:14px!important}.shop-footer .footer-brand .md-mark{width:82px!important;height:54px!important;flex:0 0 82px!important;display:flex!important;align-items:center!important;justify-content:center!important;overflow:visible!important;background:transparent!important;margin:0!important;padding:0!important}.shop-footer .footer-brand .md-mark img{width:82px!important;height:auto!important;max-width:82px!important;max-height:none!important;object-fit:contain!important;display:block!important;position:static!important;transform:none!important;mix-blend-mode:screen!important;margin:0!important;padding:0!important}.shop-footer .footer-brand .brand-name{display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;width:max-content!important;min-width:max-content!important;white-space:nowrap!important;font-size:1.9rem!important;line-height:1!important}.shop-footer .footer-brand .brand-subtitle{display:block!important;margin:7px 0 0!important;font-size:9px!important;font-weight:600!important;letter-spacing:.22em!important;line-height:1!important;color:#bf00ff!important}

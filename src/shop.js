@@ -227,6 +227,34 @@ export function renderShop(config) {
     });
 
   /*
+   * Instagram
+   */
+  const instagramLink =
+    (shop.social_links || []).find(link => {
+      const label = String(link.label || '').toLowerCase();
+      const url = String(link.url || '').toLowerCase();
+
+      return (
+        label.includes('instagram') ||
+        url.includes('instagram.com')
+      );
+    });
+
+  document
+    .querySelectorAll('[data-instagram]')
+    .forEach(el => {
+      const url = instagramLink?.url || '';
+
+      if (/^https:\/\/(www\.)?instagram\.com\//i.test(url)) {
+        el.hidden = false;
+        el.href = url;
+        el.target = '_blank';
+        el.rel = 'noopener noreferrer';
+      } else {
+        el.hidden = true;
+      }
+    });
+  /*
    * Directions / Google Maps
    */
   let directions = '';
@@ -300,4 +328,5 @@ export function renderShop(config) {
       });
     });
 }
+
 
