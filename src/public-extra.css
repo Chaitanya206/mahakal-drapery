@@ -205,3 +205,19 @@ header,
   white-space: nowrap !important;
   color: #bf00ff !important;
 }
+/* Remove the extra contact-page top strip */
+body[data-page="contact"] .shop-topline {
+  display: none !important;
+  height: 0 !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+/* Make contact page start directly with the real header */
+body[data-page="contact"] .header {
+  margin-top: 0 !important;
+  padding-top: 14px !important;
+}
+
