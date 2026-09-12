@@ -16,3 +16,246 @@ body {
 
 /* paste the rest of your CSS here */
 
+
+/* ===== DARK NEON PURPLE CONTRAST FIX ===== */
+
+:root {
+  --ink: #ffffff;
+  --muted: #d8c7df;
+  --paper: #120018;
+  --accent: #bf00ff;
+  --line: #54205f;
+  --white: #1b0024;
+}
+
+/* PAGE */
+body {
+  background: #120018;
+  color: #ffffff;
+}
+
+/* HEADER */
+.header {
+  background: #120018;
+  border-bottom-color: #54205f;
+}
+
+.header-link {
+  color: #ffffff;
+  border-bottom-color: transparent;
+}
+
+.header-nav .header-link[aria-current="page"],
+.header-nav .header-link:hover {
+  color: #bf00ff;
+  border-bottom-color: #bf00ff;
+}
+
+.header-note {
+  color: #d8c7df;
+}
+
+/* HEADINGS */
+.intro-row h1,
+.intro-row h2,
+.product-copy h3,
+.detail-title {
+  color: #ffffff;
+}
+
+/* BODY TEXT */
+.intro-row p,
+.header-note,
+.catalog-note p,
+.price-note,
+.product-code,
+.detail-code,
+.detail-description,
+.detail-disclaimer,
+.footer p,
+.footer > span {
+  color: #d8c7df;
+}
+
+/* ACCENT */
+.rule {
+  background: #bf00ff;
+  box-shadow: 0 0 12px rgba(191, 0, 255, .55);
+}
+
+.intro-foot {
+  border-top-color: #54205f;
+  border-bottom-color: #bf00ff;
+}
+
+/* CATEGORIES */
+.category-button {
+  color: #ffffff;
+  border-bottom-color: #54205f;
+}
+
+.category-button[aria-pressed="true"] {
+  background: #bf00ff;
+  color: #ffffff;
+  box-shadow: 0 0 18px rgba(191, 0, 255, .35);
+}
+
+.category-button:not([aria-pressed="true"]):hover {
+  background: #26002f;
+  color: #ffffff;
+}
+
+/* CATALOG NOTE */
+.catalog-note {
+  background: #1b0024;
+  border-top-color: #bf00ff;
+}
+
+.catalog-note > span {
+  color: #bf00ff;
+}
+
+/* PRODUCT CARDS */
+.product-open,
+.product-card {
+  background: #1b0024;
+  color: #ffffff;
+  border-color: #54205f;
+}
+
+.product-photo {
+  background: #22002c;
+  border-color: #54205f;
+}
+
+.product-category {
+  background: #bf00ff;
+  color: #ffffff;
+}
+
+.product-copy h3 {
+  color: #ffffff;
+}
+
+.product-code {
+  color: #d8c7df;
+}
+
+.product-bottom {
+  border-bottom-color: #54205f;
+}
+
+.product-price {
+  color: #ffffff;
+}
+
+.product-price > span {
+  color: #d8c7df;
+}
+
+.card-arrow {
+  border-color: #bf00ff;
+  color: #ffffff;
+}
+
+.product-open:hover {
+  border-color: #bf00ff;
+  box-shadow: 0 0 20px rgba(191, 0, 255, .18);
+}
+
+.product-open:hover .card-arrow {
+  background: #bf00ff;
+  border-color: #bf00ff;
+  color: #ffffff;
+}
+
+/* LINES */
+.line {
+  background: #54205f;
+}
+
+/* FORMS */
+input,
+select,
+textarea {
+  background: #1b0024;
+  color: #ffffff;
+  border-color: #54205f;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #a98db2;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #bf00ff;
+  border-color: #bf00ff;
+}
+
+/* DIALOG */
+dialog {
+  background: #120018;
+  color: #ffffff;
+  border-color: #54205f;
+}
+
+.close-dialog {
+  background: #1b0024;
+  color: #ffffff;
+  border-color: #bf00ff;
+}
+
+.detail-photo {
+  background: #22002c;
+}
+
+dl > div {
+  border-top-color: #54205f;
+}
+
+dt {
+  color: #d8c7df;
+}
+
+dd {
+  color: #ffffff;
+}
+
+/* FOOTER */
+.footer,
+.shop-footer {
+  background: #120018;
+  border-top-color: #54205f;
+}
+
+.footer-bottom {
+  border-top-color: #54205f;
+}
+
+/* LINKS */
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #bf00ff;
+}
+
+/* BUTTONS */
+button {
+  color: #ffffff;
+}
+
+button:hover {
+  border-color: #bf00ff;
+}
+
+/* NEON ACCENT */
+.catalog-note > span,
+.category-button[aria-pressed="true"] {
+  text-shadow: 0 0 8px rgba(191, 0, 255, .35);
+}
+
