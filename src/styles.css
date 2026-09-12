@@ -259,3 +259,102 @@ button:hover {
   text-shadow: 0 0 8px rgba(191, 0, 255, .35);
 }
 
+
+/* ================================
+   CATALOG CARDS — DARK PURPLE
+   ================================ */
+
+.product-open {
+  background: #1b0024 !important;
+  color: #ffffff !important;
+  border: 1px solid #54205f !important;
+}
+
+.product-open:hover {
+  border-color: #bf00ff !important;
+  box-shadow: 0 0 22px rgba(191, 0, 255, 0.18) !important;
+}
+
+.product-open h3,
+.product-copy h3 {
+  color: #ffffff !important;
+}
+
+.product-open p,
+.product-copy p {
+  color: #d8c7df !important;
+}
+
+.product-open .product-code,
+.product-code {
+  color: #d8c7df !important;
+}
+
+.product-open .product-bottom,
+.product-bottom {
+  border-color: #54205f !important;
+}
+
+.product-open .card-arrow,
+.card-arrow {
+  color: #ffffff !important;
+  border-color: #bf00ff !important;
+}
+
+.product-open:hover .card-arrow {
+  background: #bf00ff !important;
+  color: #ffffff !important;
+}
+
+.product-category {
+  background: #bf00ff !important;
+  color: #ffffff !important;
+}
+
+/* Category collection cards */
+.collection-card,
+.category-card {
+  background: #1b0024 !important;
+  color: #ffffff !important;
+  border-color: #54205f !important;
+}
+
+.collection-card h3,
+.category-card h3 {
+  color: #ffffff !important;
+}
+
+.collection-card p,
+.category-card p {
+  color: #d8c7df !important;
+}
+
+/* Inputs inside catalogue */
+input,
+select,
+textarea {
+  background: #1b0024 !important;
+  color: #ffffff !important;
+  border-color: #54205f !important;
+}
+
+input::placeholder {
+  color: #a98db2 !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #bf00ff !important;
+  outline: 2px solid rgba(191, 0, 255, 0.35) !important;
+}
+
+.catalog-note {
+  background: #26002f !important;
+  color: #ffffff !important;
+  border-left-color: #bf00ff !important;
+}
+
+.catalog-note p {
+  color: #d8c7df !important;
+}
