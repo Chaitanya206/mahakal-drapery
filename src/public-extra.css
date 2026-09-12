@@ -221,3 +221,30 @@ body[data-page="contact"] .header {
   padding-top: 14px !important;
 }
 
+
+/* ===== HEADER WHATSAPP ===== */
+
+.header-whatsapp {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-right: 22px !important;
+  color: #bf00ff !important;
+  text-decoration: none !important;
+  font-size: 0.78rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.04em !important;
+  white-space: nowrap !important;
+}
+
+.header-whatsapp:hover {
+  color: #ffffff !important;
+}
+
+@media (max-width: 700px) {
+  .header-whatsapp {
+    margin-right: 10px !important;
+    font-size: 0.7rem !important;
+  }
+}
+
