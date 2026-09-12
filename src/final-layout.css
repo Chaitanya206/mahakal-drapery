@@ -1,0 +1,95 @@
+/* Final public-site layout override. Loaded after the other public CSS. */
+html,body{
+  width:100%;
+  min-width:100%;
+  margin:0!important;
+  padding:0!important;
+  background:#120018!important;
+}
+
+/* Remove the temporary top banner so the header starts at the top of the page. */
+.sample-banner{display:none!important}
+
+/* Full-width header: break out of the centered .wrap. */
+.header.wrap{
+  width:100vw!important;
+  max-width:none!important;
+  margin-left:calc(50% - 50vw)!important;
+  margin-right:calc(50% - 50vw)!important;
+  box-sizing:border-box!important;
+  padding-left:max(24px,calc((100vw - 1512px)/2))!important;
+  padding-right:max(24px,calc((100vw - 1512px)/2))!important;
+  padding-top:14px!important;
+  padding-bottom:14px!important;
+  min-height:0!important;
+  background:#26002f!important;
+}
+
+/* Main content remains centred, but no black gutter is introduced. */
+main.wrap{
+  width:calc(100% - 76px)!important;
+  max-width:1512px!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  box-sizing:border-box!important;
+}
+
+/* Full-width footer: break out of the centred .wrap. */
+.shop-footer.wrap{
+  width:100vw!important;
+  max-width:none!important;
+  margin-left:calc(50% - 50vw)!important;
+  margin-right:calc(50% - 50vw)!important;
+  box-sizing:border-box!important;
+  padding-left:max(24px,calc((100vw - 1512px)/2))!important;
+  padding-right:max(24px,calc((100vw - 1512px)/2))!important;
+  margin-top:24px!important;
+  background:#120018!important;
+}
+
+/* Compact the shell so there is no artificial vertical breathing room. */
+.intro{padding-top:34px!important}
+.collection-end{margin-top:28px!important;margin-bottom:14px!important}
+.footer-top{padding-top:26px!important;padding-bottom:22px!important}
+.footer-bottom{padding-top:12px!important;padding-bottom:12px!important}
+
+/* Category overview cards */
+.category-overview .category-tile{
+  background:#1b0024!important;
+  color:#fff!important;
+  border:1px solid #54205f!important;
+}
+.category-overview .category-tile h3{color:#fff!important}
+.category-overview .category-tile .tile-code{color:#bf00ff!important}
+.category-overview .category-tile .tile-age,
+.category-overview .category-tile .tile-range{color:#d8c7df!important}
+.category-overview .category-tile .tile-bottom{color:#fff!important}
+.category-overview .category-tile:hover{
+  background:#26002f!important;
+  border-color:#bf00ff!important;
+  box-shadow:0 0 22px rgba(191,0,255,.22)!important;
+}
+
+/* Prevent old white form/card surfaces from breaking the dark theme. */
+.catalog-filters input,
+.catalog-filters select,
+.catalog-filters button,
+.catalog-pagination button{
+  background:#1b0024!important;
+  color:#fff!important;
+  border-color:#54205f!important;
+}
+.catalogue-notice,
+.catalog-note{
+  background:#1b0024!important;
+  color:#d8c7df!important;
+  border-left-color:#bf00ff!important;
+}
+
+@media(max-width:600px){
+  main.wrap{width:calc(100% - 36px)!important}
+  .header.wrap,.shop-footer.wrap{
+    padding-left:18px!important;
+    padding-right:18px!important;
+  }
+}
