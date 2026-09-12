@@ -1,142 +1,36 @@
 /* Mahakal Drapery — unified dark neon purple layout */
-:root{
-  --accent:#bf00ff;
-  --neon:#bf00ff;
-  --paper:#120018;
-  --ink:#ffffff;
-  --muted:#d8c7df;
-  --line:#54205f;
-}
-
-html,
-body{
-  width:100% !important;
-  min-width:100% !important;
-  min-height:100% !important;
-  margin:0 !important;
-  padding:0 !important;
-  background:#120018 !important;
-  color:#ffffff !important;
-}
-
-body{
-  min-height:100vh !important;
-}
-
-.wrap{
-  width:100% !important;
-  max-width:none !important;
-  margin-left:0 !important;
-  margin-right:0 !important;
-  box-sizing:border-box !important;
-  padding-left:clamp(24px,4vw,72px) !important;
-  padding-right:clamp(24px,4vw,72px) !important;
-}
-
+:root{--accent:#bf00ff;--neon:#bf00ff;--paper:#120018;--ink:#fff;--muted:#d8c7df;--line:#54205f}
+html,body{width:100%!important;min-width:100%!important;min-height:100%!important;margin:0!important;padding:0!important;background:#120018!important;color:#fff!important}
+body{min-height:100vh!important}
+.wrap{box-sizing:border-box!important}
 .sample-banner{display:none!important}
+.header{width:100%!important;min-height:0!important;height:auto!important;margin:0!important;padding-top:14px!important;padding-bottom:14px!important;background:#120018!important;border-bottom:1px solid #54205f!important}
+.header>*{margin-top:0!important;margin-bottom:0!important}
+.header-nav,.header-note{margin-top:0!important;margin-bottom:0!important}
+main.wrap,main.wrap>*{min-height:0!important;height:auto}
+main.wrap{padding-top:0!important;padding-bottom:0!important}
+#collection,.catalog-section,.product-grid,.category-overview{min-height:0!important}
+.category-overview{align-content:start!important}
+.collection-end{margin-top:28px!important;margin-bottom:16px!important}
+.shop-footer,.footer{width:100%!important;margin-top:0!important;padding-top:28px!important;padding-bottom:14px!important;background:#120018!important}
+.footer-top{padding-top:0!important;padding-bottom:24px!important}.footer-bottom{padding-top:14px!important;padding-bottom:14px!important}
+.brand-symbol,.brand-mark,.md-mark{background:transparent!important;background-color:transparent!important;box-shadow:none!important}
 
-.header{
-  width:100% !important;
-  min-height:0 !important;
-  height:auto !important;
-  margin:0 !important;
-  padding-top:14px !important;
-  padding-bottom:14px !important;
-  background:#120018 !important;
-  border-bottom:1px solid #54205f !important;
-}
+/* RENTAL SHOP subtitle — applies to BOTH the top header and footer brand lockup. */
+.brand-name{display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;line-height:1.05!important;white-space:nowrap!important}
+.brand-name::after{content:"RENTAL SHOP"!important;display:block!important;margin-top:5px!important;font-family:var(--sans)!important;font-size:.62rem!important;font-weight:600!important;letter-spacing:.16em!important;text-transform:uppercase!important;color:#bf00ff!important;line-height:1!important}
 
-.header > *{
-  margin-top:0 !important;
-  margin-bottom:0 !important;
-}
+.rule{background:#bf00ff!important;box-shadow:0 0 12px rgba(191,0,255,.45)!important}.tiny-star{color:#bf00ff!important}
+.header-link{border-bottom-color:#bf00ff}.header-nav .header-link[aria-current=page],.header-nav .header-link:hover{border-bottom-color:#fff}
+.intro-foot{border-color:var(--line)}
+.category-button{border-bottom-color:var(--line);color:var(--ink)}
+.category-button[aria-pressed=true]{background:#bf00ff;color:#17001e;box-shadow:0 0 22px rgba(191,0,255,.3)}
+.category-button:not([aria-pressed=true]):hover{background:#3a0a49}
 
-.header-nav,
-.header-note{
-  margin-top:0 !important;
-  margin-bottom:0 !important;
-}
+/* Category cards */
+.category-overview .category-tile{background:#1b0024!important;color:#fff!important;border:1px solid #54205f!important}
+.category-overview .category-tile:hover{background:#26002f!important;border-color:#bf00ff!important;box-shadow:0 0 22px rgba(191,0,255,.22)!important}
+.category-overview .category-tile .tile-code{color:#bf00ff!important}.category-overview .category-tile h3{color:#fff!important}.category-overview .category-tile .tile-age,.category-overview .category-tile .tile-range{color:#d8c7df!important}.category-overview .category-tile .tile-bottom{color:#fff!important}
 
-main.wrap,
-main.wrap > *{
-  min-height:0 !important;
-  height:auto;
-}
-
-main.wrap{
-  padding-top:0 !important;
-  padding-bottom:0 !important;
-}
-
-#collection,
-.catalog-section,
-.product-grid,
-.category-overview{
-  min-height:0 !important;
-}
-
-.category-overview{align-content:start !important}
-
-.collection-end{
-  margin-top:28px !important;
-  margin-bottom:16px !important;
-}
-
-.shop-footer,
-.footer{
-  width:100% !important;
-  margin-top:0 !important;
-  padding-top:28px !important;
-  padding-bottom:14px !important;
-  background:#120018 !important;
-}
-
-.footer-top{
-  padding-top:0 !important;
-  padding-bottom:24px !important;
-}
-
-.footer-bottom{
-  padding-top:14px !important;
-  padding-bottom:14px !important;
-}
-
-.brand-symbol,
-.brand-mark{
-  background:transparent !important;
-  background-color:transparent !important;
-  box-shadow:none !important;
-}
-
-/* Header brand lockup: add the requested "Rental Shop" subtitle under the name. */
-.header .brand-name{
-  display:flex !important;
-  flex-direction:column !important;
-  align-items:flex-start !important;
-  justify-content:center !important;
-  line-height:1.05 !important;
-}
-
-.header .brand-name::after{
-  content:"Rental Shop";
-  display:block;
-  margin-top:5px;
-  font-family:var(--sans);
-  font-size:.68rem;
-  font-weight:600;
-  letter-spacing:.16em;
-  text-transform:uppercase;
-  color:#bf00ff;
-  line-height:1;
-}
-
-.rule{background:#bf00ff !important;box-shadow:0 0 12px rgba(191,0,255,.45) !important}
-.tiny-star{color:#bf00ff !important}
-
-@media(max-width:600px){
-  .wrap{padding-left:18px !important;padding-right:18px !important}
-  .header{padding-top:11px !important;padding-bottom:11px !important}
-  .header .brand-name::after{font-size:.58rem;margin-top:4px}
-}
-
+@media(max-width:600px){.wrap{padding-left:18px!important;padding-right:18px!important}.header{padding-top:11px!important;padding-bottom:11px!important}.brand-name::after{font-size:.54rem!important;margin-top:4px!important}}
 @media(prefers-reduced-motion:reduce){body::before{display:none}}
