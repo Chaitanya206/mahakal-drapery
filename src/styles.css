@@ -1,0 +1,18 @@
+
+/* DARK NEON PURPLE THEME */
+:root {
+  --ink: #ffffff;
+  --muted: #d8c7df;
+  --paper: #120018;
+  --accent: #bf00ff;
+  --line: #54205f;
+  --white: #1b0024;
+}
+
+body {
+  background: #120018;
+  color: #ffffff;
+}
+
+/* paste the rest of your CSS here */
+

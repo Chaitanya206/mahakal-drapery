@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mahakal Drapery, costume rental shop in New Sangvi, Pune. Explore costumes, Garba and Dandiya outfits, dance costumes, fancy dress, accessories and props.">
+  <meta name="theme-color" content="#251a2b">
+  <title>Mahakal Drapery — Costume Catalogue</title>
+  <link rel="icon" type="image/png" href="assets/mahakal-drapery-logo.png">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="catalog.js"></script>
+  <script defer src="site.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#collection">Skip to collection</a>
+  <div class="sample-banner">CATALOGUE UPDATE <span>Photos and rental details are being added.</span></div>
+  <header class="header wrap">
+    <a class="brand brand-lockup" href="index.html" aria-label="Mahakal Drapery home"><span class="md-mark" aria-hidden="true"><img src="assets/mahakal-drapery-logo.png" alt="" width="1254" height="1254"></span><span class="brand-name" data-brand>Mahakal Drapery</span></a>
+    <nav class="header-nav" aria-label="Main navigation"><a class="header-link" href="index.html#collection" aria-current="page">The catalogue</a><a class="header-link" href="contact.html">Visit &amp; contact <span aria-hidden="true">↗</span></a></nav>
+    <span class="header-note">Rental Shop Pune</span>
+  </header>
+  <main class="wrap">
+    <section class="intro" aria-labelledby="page-title">
+      <div class="eyebrow"><span class="rule"></span> MAHAKAL DRAPERY · PUNE</div>
+      <div class="intro-row"><h1 id="page-title">Costumes for<br><em>every spotlight.</em></h1><p>Costume rentals for celebrations, dance and the stage.<br>Visit us at Krishna Chowk, New Sangvi.</p></div>
+      <div class="intro-foot"><span>COSTUME RENTAL · DANCE · FANCY DRESS</span><span>COLLECTION / 01</span></div>
+    </section>
+    <p class="service-line" data-services-inline>Costume Rental · Garba &amp; Dandiya · Dance Costumes · Fancy Dress · Drama &amp; Character Costumes · Accessories &amp; Props</p>
+    <section class="catalog-section" id="collection" aria-labelledby="collection-heading">
+      <aside class="catalog-sidebar">
+        <h2 id="collection-heading">The catalogue<span class="tiny-star" aria-hidden="true">✳</span></h2>
+        <p class="sidebar-label">BROWSE CATEGORIES</p>
+        <nav id="categories" aria-label="Costume categories"></nav>
+        <div class="catalog-note"><span aria-hidden="true">↗</span><p>Found your costume?<br>Quote its ID when you contact us.</p></div>
+      </aside>
+      <div class="catalog-main">
+        <div class="results-header"><p id="result-count" role="status" aria-live="polite" tabindex="-1"></p><span class="price-note">Rent in <span id="currency-label">INR</span></span></div>
+        <p class="catalogue-notice">Our catalogue is being updated. Photos, names, rents, sizes and availability will be added to each costume ID.</p>
+        <div class="category-overview" id="products"></div>
+        <p class="empty" id="empty" hidden>No costumes in this category yet.</p>
+        <div class="collection-end"><span class="line"></span><span>Every character starts somewhere.</span><span class="line"></span></div>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap shop-footer">
+    <div class="footer-top">
+      <div class="footer-intro"><a class="brand brand-lockup footer-brand" href="index.html" aria-label="Mahakal Drapery home"><span class="md-mark" aria-hidden="true"><img src="assets/mahakal-drapery-logo.png" alt="" width="1254" height="1254" loading="lazy"></span><span class="brand-name" data-brand>Mahakal Drapery</span></a><p>Costume rentals · New Sangvi, Pune</p><p class="footer-owner"><span data-owner>Pankaj Soni</span><br>Owner – <span data-brand>Mahakal Drapery</span></p></div>
+      <div><h2>Explore</h2><a href="index.html#collection">The catalogue</a><a href="contact.html">Visit &amp; contact</a></div>
+      <div><h2>Get in touch</h2><div data-contact-phone><a href="tel:+917276959496">7276959496</a><a href="tel:+917972755815">7972755815</a></div><div data-contact-email><a href="mailto:Mahakaldrepary@gmail.com">Mahakaldrepary@gmail.com</a></div><a data-contact-whatsapp hidden>Message on WhatsApp ↗</a></div>
+      <div><h2>Find the shop</h2><address data-address>2nd Floor, Mahakal Drapery,
+New Sangvi, Krishna Chowk,
+Near Bank of Baroda, Opp. Navkar Beauty Parlour,
+PCMC, Pune.</address><a href="contact.html#location">Location &amp; opening hours ↗</a></div>
+    </div>
+    <div class="footer-bottom"><p>Mahakal Drapery · <span id="year"></span></p><span>Costumes · Accessories · Props</span></div>
+  </footer>
+  <dialog id="product-dialog" aria-labelledby="detail-title">
+    <button class="close-dialog" id="close-dialog" type="button" aria-label="Close costume details">✕</button>
+    <div class="detail-layout"><div class="detail-photo"><img id="detail-image" alt="" width="768" height="1024"></div><div class="detail-copy"><p class="eyebrow" id="detail-category"></p><h2 id="detail-title"></h2><p class="detail-code" id="detail-code"></p><p class="detail-price"><span>RENT</span> <strong id="detail-price"></strong></p><p class="detail-description" id="detail-description"></p><dl id="detail-specs"></dl><p class="detail-disclaimer">Please call the shop to confirm rental duration, charges and availability.</p></div></div>
+  </dialog>
+  <noscript><p class="wrap">Please enable JavaScript to view the costume collection.</p></noscript>
+</body>
+</html>
