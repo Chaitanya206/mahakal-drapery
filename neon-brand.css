@@ -1,0 +1,49 @@
+/* Mahakal Drapery — subtle neon atmosphere */
+:root{
+  --accent:#bf00ff;
+  --neon:#bf00ff;
+  --paper:#fbf9fc;
+}
+
+body{
+  background:
+    radial-gradient(900px 520px at 8% 8%, rgba(191,0,255,.075), transparent 62%),
+    radial-gradient(760px 500px at 92% 28%, rgba(191,0,255,.055), transparent 64%),
+    radial-gradient(900px 620px at 50% 100%, rgba(191,0,255,.045), transparent 68%),
+    var(--paper);
+}
+
+/* A soft ambient glow, not a loud cyber/neon effect. */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:-1;
+  background:radial-gradient(circle at 50% 20%, rgba(191,0,255,.025), transparent 42%);
+}
+
+.brand-symbol{
+  background:linear-gradient(135deg, #bf00ff, #d94dff);
+  box-shadow:0 0 24px rgba(191,0,255,.22);
+}
+
+.tiny-star{color:#bf00ff}
+
+.category-button[aria-pressed=true]{
+  background:#bf00ff;
+  box-shadow:0 5px 22px rgba(191,0,255,.16);
+}
+
+.product-open:hover .card-arrow{
+  background:#bf00ff;
+  border-color:#bf00ff;
+}
+
+button:focus-visible,a:focus-visible{
+  outline-color:#bf00ff;
+}
+
+@media(prefers-reduced-motion:reduce){
+  body::before{display:none}
+}
