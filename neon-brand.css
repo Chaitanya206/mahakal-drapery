@@ -34,3 +34,53 @@ main.wrap{padding-top:0!important;padding-bottom:0!important}
 
 @media(max-width:600px){.wrap{padding-left:18px!important;padding-right:18px!important}.header{padding-top:11px!important;padding-bottom:11px!important}.brand-name::after{font-size:.54rem!important;margin-top:4px!important}}
 @media(prefers-reduced-motion:reduce){body::before{display:none}}
+
+/* FINAL BRAND LOCKUP FIX */
+
+.header .brand-lockup,
+.footer .brand-lockup {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 10px !important;
+}
+
+.header .brand-lockup .brand-name,
+.footer .brand-lockup .brand-name {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  grid-template-rows: auto auto !important;
+  width: max-content !important;
+  min-width: max-content !important;
+  max-width: none !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.header .brand-lockup .brand-name::after,
+.footer .brand-lockup .brand-name::after {
+  content: "Rental Shop" !important;
+  display: block !important;
+  grid-row: 2 !important;
+  margin-top: 6px !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.12em !important;
+  line-height: 1 !important;
+  text-transform: none !important;
+  color: #bf00ff !important;
+  white-space: nowrap !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.footer .brand-lockup .brand-name::after {
+  font-size: 9px !important;
+  margin-top: 5px !important;
+}
+
