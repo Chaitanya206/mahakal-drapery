@@ -121,3 +121,49 @@ header,
   border-bottom-color: #bf00ff !important;
 }
 
+
+/* ===== FIX CATEGORY CARDS ===== */
+
+.category-overview .category-tile,
+.category-overview button.category-tile {
+  background-color: #1b0024 !important;
+  background: #1b0024 !important;
+  color: #ffffff !important;
+  border: 1px solid #54205f !important;
+}
+
+.category-overview .category-tile:hover,
+.category-overview button.category-tile:hover {
+  background-color: #26002f !important;
+  background: #26002f !important;
+  border-color: #bf00ff !important;
+  box-shadow: 0 0 24px rgba(191, 0, 255, 0.25) !important;
+}
+
+.category-overview .category-tile *,
+.category-overview button.category-tile * {
+  color: #ffffff !important;
+}
+
+.category-overview .category-tile .tile-code {
+  color: #bf00ff !important;
+}
+
+.category-overview .category-tile h3 {
+  color: #ffffff !important;
+}
+
+.category-overview .category-tile .tile-age,
+.category-overview .category-tile .tile-range {
+  color: #d8c7df !important;
+}
+
+.category-overview .category-tile .tile-bottom {
+  color: #ffffff !important;
+  border-top: 1px solid #54205f !important;
+}
+
+.category-overview .category-tile:hover .tile-bottom {
+  color: #bf00ff !important;
+}
+
