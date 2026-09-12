@@ -487,3 +487,80 @@ textarea:focus {
   background-color: #120018 !important;
 }
 
+
+/* ===== FULL WIDTH LAYOUT FIX ===== */
+
+html,
+body {
+  width: 100%;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #120018 !important;
+}
+
+/* Remove the artificial page-width boundary */
+.wrap {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 38px;
+  padding-right: 38px;
+}
+
+/* Full-width header */
+.header {
+  width: 100%;
+  min-height: 90px !important;
+  background: #120018 !important;
+  border-bottom: 1px solid #54205f !important;
+}
+
+/* Keep header contents aligned nicely */
+.header .brand,
+.header .header-nav,
+.header .header-note {
+  flex-shrink: 0;
+}
+
+/* Full-width footer */
+.shop-footer,
+.footer {
+  width: 100% !important;
+  background: #120018 !important;
+}
+
+/* Footer content stays readable instead of touching edges */
+.footer-top,
+.footer-bottom {
+  width: 100%;
+}
+
+/* Remove unnecessary vertical spacing */
+.intro {
+  padding-top: 38px !important;
+}
+
+.catalog-section {
+  padding-bottom: 20px !important;
+}
+
+.shop-footer {
+  margin-top: 20px !important;
+}
+
+/* Remove black/different block around logo */
+.brand-symbol {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Make header one consistent color */
+.header,
+.header > *,
+.header-nav,
+.brand {
+  background: transparent !important;
+}
+
