@@ -1,0 +1,16 @@
+/* Mahakal Drapery Rental Shop — client brand overrides */
+:root{--accent:#bf00ff;--accent-soft:#e7b3ff;--neon:#bf00ff;--neon-dark:#7a00a8}
+button:focus-visible,a:focus-visible{outline-color:#bf00ff}
+.brand-name,.brand{color:var(--ink)}
+.brand-name::after{content:'';display:block;height:3px;width:34px;margin-top:5px;background:#bf00ff;box-shadow:0 0 10px #bf00ff}
+.header-link[aria-current=page],.header-link:hover{border-bottom-color:#bf00ff!important}
+.tiny-star{color:#bf00ff!important}
+.category-button[aria-pressed=true]{background:#bf00ff!important;box-shadow:0 0 14px rgba(191,0,255,.25)}
+.category-button:not([aria-pressed=true]):hover{background:#f7eaff!important}
+.card-arrow,.directions-button{transition:all .2s ease}
+.product-open:hover .card-arrow{background:#bf00ff!important;border-color:#bf00ff!important;box-shadow:0 0 12px rgba(191,0,255,.35)}
+.directions-button:hover{background:#bf00ff!important;border-color:#bf00ff!important;color:#fff!important}
+.neon-whatsapp{display:inline-flex!important;align-items:center;gap:9px;margin-top:14px;padding:11px 16px;border:1px solid #bf00ff;border-radius:4px;color:#bf00ff!important;font-weight:600;text-decoration:none!important;box-shadow:0 0 12px rgba(191,0,255,.18)}
+.neon-whatsapp:hover{background:#bf00ff;color:#fff!important;box-shadow:0 0 20px rgba(191,0,255,.4)}
+.shop-footer{border-top-color:#bf00ff}
+@media(max-width:600px){.brand-name::after{height:2px;width:28px}.neon-whatsapp{width:100%;justify-content:center}}
