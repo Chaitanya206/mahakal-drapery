@@ -248,3 +248,13 @@ body[data-page="contact"] .header {
   }
 }
 
+
+/* ===== HEADER WHATSAPP — MATCH NAV ===== */
+
+.header-whatsapp {
+  font-size: 0.72rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.02em !important;
+  margin-right: 22px !important;
+}
+
