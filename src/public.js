@@ -2,6 +2,7 @@ import { categories, products, product, settings, watchChanges, money, failure, 
 import { renderShop } from './shop';
 import defaults from './default-shop.json';
 import './public-extra.css';
+import './final-layout.css';
 const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;};
 const grid=document.querySelector('#products'),nav=document.querySelector('#categories');
 let active='',page=0,cats=[],filter={},generation=0,openSlug=null,detailGeneration=0;
@@ -15,7 +16,7 @@ function renderNav(){nav.replaceChildren(categoryButton(null));let group='';for(
 function filters(){const box=el('form','catalog-filters');box.setAttribute('aria-label','Search and filter costumes');
  const field=(label,name,type='text')=>{const l=el('label','',label),i=el('input');i.type=type;i.name=name;if(type==='number'){i.min='0';i.step='0.01';}l.append(i);box.append(l);return i;};
  field('Search name, ID or tag','search').placeholder='Find a costume…';
- const select=(label,name,options)=>{const l=el('label','',label),s=el('select');s.name=name;for(const [value,text] of options){const o=el('option','',text);o.value=value;s.append(o);}l.append(s);box.append(l);};
+ const select=(label,name,options)=>{const l=el('label','',label),s=el('select');s.name=name;for(const [value,text]of options){const o=el('option','',text);o.value=value;s.append(o);}l.append(s);box.append(l);};
  select('Availability','availability',[['','All statuses'],...states.map(x=>[x,x])]);select('Sort','sort',[['new','Newest'],['name','Name'],['price-up','Price: low to high'],['price-down','Price: high to low']]);
  field('Minimum ₹','min','number');field('Maximum ₹','max','number');field('Size','size').placeholder='e.g. M';field('Colour','color').placeholder='e.g. Blue';
  const apply=el('button','','Apply filters');apply.type='submit';const reset=el('button','','Reset');reset.type='reset';box.append(apply,reset);
