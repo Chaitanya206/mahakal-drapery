@@ -1,4 +1,4 @@
-@import url('/neon-brand.css');
+﻿@import url('/neon-brand.css');
 
 /* Additive controls only. The preserved public stylesheet is unchanged. */
 .catalog-filters{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:24px;align-items:end}.catalog-filters label{display:grid;gap:6px;font:400 .875rem var(--sans);flex:1 1 120px}.catalog-filters label:first-child{flex-basis:230px}.catalog-filters input,.catalog-filters select,.catalog-filters button,.catalog-pagination button{font:inherit;padding:11px 12px;border:1px solid var(--line);border-radius:4px;background:white;min-height:44px;max-width:100%;width:100%}.catalog-filters button{width:auto;cursor:pointer}.catalog-pagination{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:24px 0}.catalog-pagination button{width:auto;cursor:pointer}.product-open{display:block;text-decoration:none;color:inherit;width:100%}.detail-page{padding:28px 0 70px}.detail-page>.detail-layout{margin-top:24px;border:1px solid var(--line)}.detail-thumbnails{display:flex;gap:8px;overflow-x:auto;padding:12px}.detail-thumbnails button{border:1px solid var(--line);padding:3px;background:white;min-width:60px;cursor:pointer}.detail-thumbnails img{width:55px;height:70px;object-fit:cover}.detail-page h1{font:400 2.6rem/1.1 var(--serif);overflow-wrap:anywhere}.detail-contact{display:inline-block;margin-top:20px;padding:13px 20px;background:var(--ink);color:white}.detail-page .detail-photo img{width:100%;height:auto;object-fit:contain}.catalog-error{overflow-wrap:anywhere}
@@ -40,7 +40,7 @@ dialog::backdrop{background:rgba(10,0,14,.82)}
 .text-link,.contact-method a{color:var(--ink)}
 
 /* =========================================================
-   HEADER � DARK PURPLE NEON THEME
+   HEADER ï¿½ DARK PURPLE NEON THEME
    ========================================================= */
 
 .header {
@@ -167,7 +167,7 @@ header,
   color: #bf00ff !important;
 }
 
-/* FINAL BRAND FIX — disable all old pseudo subtitles */
+/* FINAL BRAND FIX â€” disable all old pseudo subtitles */
 .brand-name::after,
 .header .brand-name::after,
 .footer .brand-name::after,
@@ -249,7 +249,7 @@ body[data-page="contact"] .header {
 }
 
 
-/* ===== HEADER WHATSAPP � MATCH NAV ===== */
+/* ===== HEADER WHATSAPP ï¿½ MATCH NAV ===== */
 
 /* ===== FINAL HEADER TYPOGRAPHY ===== */
 
@@ -353,14 +353,17 @@ body[data-page="contact"] .header {
   }
 }
 
-/* ===== FINAL HEADER SIZE + LOGO FIX ===== */
-
-/* ===== FINAL HEADER SCALE ===== */
+/* ===== FINAL HEADER ===== */
 
 .header .md-mark {
   width: 70px !important;
   height: 70px !important;
   flex: 0 0 70px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: transparent !important;
+  overflow: visible !important;
 }
 
 .header .md-mark img {
@@ -369,23 +372,25 @@ body[data-page="contact"] .header {
   max-width: 70px !important;
   max-height: 70px !important;
   object-fit: contain !important;
+  display: block !important;
+  transform: none !important;
 }
 
-/* Bigger shop name */
+/* Shop name */
 .header .brand-lockup .brand-name {
   font-size: 1.9rem !important;
   line-height: 1 !important;
   white-space: nowrap !important;
 }
 
-/* Keep subtitle small */
+/* Rental Shop */
 .header .brand-lockup .brand-subtitle {
   font-size: 9px !important;
   margin-top: 7px !important;
   letter-spacing: .22em !important;
 }
 
-/* Keep navigation readable but not oversized */
+/* Navigation */
 .header .header-nav .header-link {
   font-size: 1rem !important;
 }
@@ -396,7 +401,263 @@ body[data-page="contact"] .header {
   height: 32px !important;
 }
 
-/* Small social labels */
 .header .header-social {
   font-size: .78rem !important;
+}
+/* ===== FINAL HEADER ===== */
+
+.header .md-mark {
+  width: 70px !important;
+  height: 70px !important;
+  flex: 0 0 70px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: transparent !important;
+  overflow: visible !important;
+}
+
+.header .md-mark img {
+  width: 70px !important;
+  height: 70px !important;
+  max-width: 70px !important;
+  max-height: 70px !important;
+  object-fit: contain !important;
+  display: block !important;
+  transform: none !important;
+}
+
+.header .brand-lockup .brand-name {
+  font-size: 1.9rem !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+}
+
+.header .brand-lockup .brand-subtitle {
+  font-size: 9px !important;
+  margin-top: 7px !important;
+  letter-spacing: .22em !important;
+}
+
+.header .header-nav .header-link {
+  font-size: 1rem !important;
+}
+
+.header .header-social img {
+  width: 32px !important;
+  height: 32px !important;
+}
+
+.header .header-social {
+  font-size: .78rem !important;
+}
+
+
+/* ===== CLEAN MD LOGO ===== */
+
+.header .md-mark {
+  width: 82px !important;
+  height: 54px !important;
+  flex: 0 0 82px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: visible !important;
+  background: transparent !important;
+}
+
+.header .md-mark img {
+  width: 82px !important;
+  height: auto !important;
+  max-width: 82px !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  display: block !important;
+  transform: none !important;
+}
+
+/* Brand stays beside the logo */
+.header .brand-lockup {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+
+.header .brand-lockup .brand-name {
+  font-size: 1.9rem !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+}
+
+/* Subtitle */
+.header .brand-lockup .brand-subtitle {
+  font-size: 9px !important;
+  margin-top: 7px !important;
+  letter-spacing: .22em !important;
+}
+/* =========================================================
+   FINAL HEADER / MD LOGO
+   ========================================================= */
+
+.header .brand-lockup {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  height: auto !important;
+}
+
+.header .md-mark {
+  width: 82px !important;
+  height: 54px !important;
+  flex: 0 0 82px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  background: transparent !important;
+  position: relative !important;
+}
+
+.header .md-mark img {
+  width: 88px !important;
+  height: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+  display: block !important;
+  object-fit: contain !important;
+
+  /* Hide the black background of the logo image */
+  mix-blend-mode: screen !important;
+}
+
+/* Brand text */
+.header .brand-lockup .brand-name {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+  width: max-content !important;
+  min-width: max-content !important;
+  max-width: none !important;
+  white-space: nowrap !important;
+
+  font-size: 1.9rem !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+}
+
+/* Rental Shop */
+.header .brand-lockup .brand-subtitle {
+  display: block !important;
+  margin-top: 7px !important;
+  font-size: 9px !important;
+  font-weight: 600 !important;
+  letter-spacing: .22em !important;
+  line-height: 1 !important;
+  color: #bf00ff !important;
+}
+
+/* =========================================================
+   FINAL MD LOGO — CENTERED / UNCROPPED
+   ========================================================= */
+
+.header .brand-lockup {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+}
+
+.header .brand-lockup .md-mark {
+  width: 82px !important;
+  height: 54px !important;
+
+  flex: 0 0 82px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  position: relative !important;
+  overflow: visible !important;
+
+  padding: 0 !important;
+  margin: 0 !important;
+
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.header .brand-lockup .md-mark img {
+  position: static !important;
+
+  width: 82px !important;
+  height: auto !important;
+
+  max-width: 82px !important;
+  max-height: none !important;
+
+  object-fit: contain !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  transform: none !important;
+
+  display: block !important;
+
+  mix-blend-mode: screen !important;
+}
+
+/* Keep brand text aligned to the logo */
+.header .brand-lockup .brand-name {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+
+  width: max-content !important;
+  min-width: max-content !important;
+
+  white-space: nowrap !important;
+  line-height: 1 !important;
+
+  font-size: 1.9rem !important;
+}
+
+/* Small subtitle */
+.header .brand-lockup .brand-subtitle {
+  display: block !important;
+
+  margin: 7px 0 0 !important;
+
+  font-size: 9px !important;
+  font-weight: 600 !important;
+  letter-spacing: .22em !important;
+  line-height: 1 !important;
+
+  color: #bf00ff !important;
+}
+
+/* ===== MOVE SOCIALS TO RIGHT ===== */
+
+.header {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.header .header-nav {
+  margin-left: 50px !important;
+}
+
+.header .header-socials {
+  margin-left: auto !important;
+  margin-right: 28px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 18px !important;
+}
+
+.header .header-note {
+  margin-left: 0 !important;
+  white-space: nowrap !important;
 }
