@@ -1,54 +1,146 @@
-/* Mahakal Drapery — neon purple brand background */
+/* Mahakal Drapery — unified dark neon purple layout */
 :root{
   --accent:#bf00ff;
   --neon:#bf00ff;
-  --paper:#bf00ff;
+  --paper:#120018;
+  --ink:#ffffff;
+  --muted:#d8c7df;
+  --line:#54205f;
 }
 
-html,body{
-  background:#bf00ff;
+/* Full-viewport canvas: no black bands or boxed page background. */
+html,
+body{
+  width:100% !important;
+  min-width:100% !important;
+  min-height:100% !important;
+  margin:0 !important;
+  padding:0 !important;
+  background:#120018 !important;
+  color:#ffffff !important;
 }
 
 body{
-  color:#fff;
+  min-height:100vh !important;
 }
 
-/* Keep the purple as the dominant canvas while adding a soft light variation. */
-body::before{
-  content:"";
-  position:fixed;
-  inset:0;
-  pointer-events:none;
-  z-index:-1;
-  background:
-    radial-gradient(circle at 15% 10%, rgba(255,255,255,.10), transparent 28%),
-    radial-gradient(circle at 85% 25%, rgba(255,255,255,.07), transparent 30%),
-    radial-gradient(circle at 50% 100%, rgba(70,0,100,.12), transparent 42%);
+/* The three page-level .wrap elements are now full-width. */
+.wrap{
+  width:100% !important;
+  max-width:none !important;
+  margin-left:0 !important;
+  margin-right:0 !important;
+  box-sizing:border-box !important;
+  padding-left:clamp(24px,4vw,72px) !important;
+  padding-right:clamp(24px,4vw,72px) !important;
 }
 
-.brand-symbol{
-  background:#fff;
-  color:#bf00ff;
-  box-shadow:0 0 28px rgba(255,255,255,.28);
+/* Header: one continuous band across the viewport. */
+.header{
+  width:100% !important;
+  min-height:0 !important;
+  height:auto !important;
+  margin:0 !important;
+  padding-top:14px !important;
+  padding-bottom:14px !important;
+  background:#120018 !important;
+  border-bottom:1px solid #54205f !important;
 }
 
-.tiny-star{color:#fff}
-
-.category-button[aria-pressed=true]{
-  background:#fff;
-  color:#bf00ff;
-  border-color:#fff;
-  box-shadow:0 5px 25px rgba(255,255,255,.16);
+.header > *{
+  margin-top:0 !important;
+  margin-bottom:0 !important;
 }
 
-.product-open:hover .card-arrow{
-  background:#fff;
-  color:#bf00ff;
-  border-color:#fff;
+.header-nav{
+  margin-top:0 !important;
+  margin-bottom:0 !important;
 }
 
-button:focus-visible,a:focus-visible{
-  outline-color:#fff;
+.header-note{
+  margin-top:0 !important;
+  margin-bottom:0 !important;
+}
+
+/* Main content: remove inherited oversized vertical boxes. */
+main.wrap,
+main.wrap > *{
+  min-height:0 !important;
+  height:auto;
+}
+
+main.wrap{
+  padding-top:0 !important;
+  padding-bottom:0 !important;
+}
+
+#collection,
+.catalog-section,
+.product-grid,
+.category-overview{
+  min-height:0 !important;
+}
+
+.category-overview{
+  align-content:start !important;
+}
+
+/* Keep the ending line close to the collection. */
+.collection-end{
+  margin-top:28px !important;
+  margin-bottom:16px !important;
+}
+
+/* Footer should follow the content instead of floating far below it. */
+.shop-footer,
+.footer{
+  width:100% !important;
+  margin-top:0 !important;
+  padding-top:28px !important;
+  padding-bottom:14px !important;
+  background:#120018 !important;
+}
+
+.footer-top{
+  padding-top:0 !important;
+  padding-bottom:24px !important;
+}
+
+.footer-bottom{
+  padding-top:14px !important;
+  padding-bottom:14px !important;
+}
+
+/* Header logo stays transparent; no black logo block. */
+.brand-symbol,
+.brand-mark{
+  background:transparent !important;
+  background-color:transparent !important;
+  box-shadow:none !important;
+}
+
+/* Neon accents */
+.rule,
+.tiny-star{
+  color:#bf00ff !important;
+}
+
+.rule{
+  background:#bf00ff !important;
+  box-shadow:0 0 12px rgba(191,0,255,.45) !important;
+}
+
+/* Mobile: retain comfortable edge spacing without reintroducing a boxed layout. */
+@media(max-width:600px){
+  .wrap{
+    padding-left:18px !important;
+    padding-right:18px !important;
+  }
+
+  .header{
+    padding-top:11px !important;
+    padding-bottom:11px !important;
+  }
 }
 
 @media(prefers-reduced-motion:reduce){
