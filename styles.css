@@ -29,3 +29,211 @@
 @media(max-width:800px){.catalog-section{display:block}.category-group-label{display:none}#categories{padding-bottom:12px}.category-button{flex-shrink:0;max-width:260px}.category-overview{grid-template-columns:repeat(2,minmax(0,1fr))}.category-label small{font-size:.75rem}.catalog-sidebar h2{margin-bottom:16px}.catalogue-notice{font-size:.875rem}.category-tile{min-height:230px}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:500px){.category-overview{gap:12px}.category-tile{padding:18px 14px;min-height:245px}.category-tile h3{font-size:1.35rem}.tile-range{font-size:.75rem;overflow-wrap:anywhere}.tile-bottom{font-size:.75rem}.tile-age{font-size:.8125rem}.detail-photo.awaiting-photo{min-height:240px;height:240px}.placeholder-code{font-size:1.25rem}.product-price{font-size:.8125rem}.product-copy h3{font-size:1.1rem}.product-price>span{display:block;margin-bottom:4px}}
 @media(max-width:340px){.category-overview,.product-grid{grid-template-columns:1fr}}
+
+/* ===== DARK NEON PURPLE THEME ===== */
+
+:root {
+  --ink: #ffffff;
+  --muted: #d8c7df;
+  --paper: #120018;
+  --accent: #bf00ff;
+  --line: #54205f;
+  --white: #1b0024;
+}
+
+html,
+body {
+  background: #120018 !important;
+  color: #ffffff !important;
+}
+
+.header {
+  background: #120018 !important;
+  border-bottom-color: #54205f !important;
+}
+
+.header-link {
+  color: #ffffff !important;
+}
+
+.header-nav .header-link[aria-current="page"],
+.header-nav .header-link:hover {
+  color: #bf00ff !important;
+  border-bottom-color: #bf00ff !important;
+}
+
+.intro-row h1,
+.intro-row h2,
+.product-copy h3,
+.detail-title {
+  color: #ffffff !important;
+}
+
+.intro-row p,
+.header-note,
+.catalog-note p,
+.price-note,
+.product-code,
+.detail-code,
+.detail-description,
+.detail-disclaimer,
+.footer p,
+.footer > span {
+  color: #d8c7df !important;
+}
+
+.rule {
+  background: #bf00ff !important;
+  box-shadow: 0 0 12px rgba(191, 0, 255, .5);
+}
+
+.intro-foot {
+  border-top-color: #54205f !important;
+  border-bottom-color: #bf00ff !important;
+}
+
+.category-button {
+  color: #ffffff !important;
+  border-bottom-color: #54205f !important;
+}
+
+.category-button[aria-pressed="true"] {
+  background: #bf00ff !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 18px rgba(191, 0, 255, .35);
+}
+
+.category-button:not([aria-pressed="true"]):hover {
+  background: #26002f !important;
+  color: #ffffff !important;
+}
+
+.catalog-note {
+  background: #1b0024 !important;
+  border-top-color: #bf00ff !important;
+}
+
+.catalog-note > span {
+  color: #bf00ff !important;
+}
+
+/* PRODUCT CARDS */
+.product-open,
+.product-card {
+  background: #1b0024 !important;
+  color: #ffffff !important;
+  border-color: #54205f !important;
+}
+
+.product-copy h3 {
+  color: #ffffff !important;
+}
+
+.product-copy p,
+.product-code,
+.product-price > span {
+  color: #d8c7df !important;
+}
+
+.product-price {
+  color: #ffffff !important;
+}
+
+.product-bottom {
+  border-bottom-color: #54205f !important;
+}
+
+.product-photo {
+  background: #22002c !important;
+  border-color: #54205f !important;
+}
+
+.card-arrow {
+  border-color: #bf00ff !important;
+  color: #ffffff !important;
+}
+
+.product-open:hover {
+  border-color: #bf00ff !important;
+  box-shadow: 0 0 20px rgba(191, 0, 255, .2);
+}
+
+.product-open:hover .card-arrow {
+  background: #bf00ff !important;
+  border-color: #bf00ff !important;
+  color: #ffffff !important;
+}
+
+/* FORMS */
+input,
+select,
+textarea {
+  background: #1b0024 !important;
+  color: #ffffff !important;
+  border-color: #54205f !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #a98db2 !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #bf00ff !important;
+  border-color: #bf00ff !important;
+}
+
+button {
+  color: #ffffff !important;
+}
+
+/* DIALOG */
+dialog {
+  background: #120018 !important;
+  color: #ffffff !important;
+  border-color: #54205f !important;
+}
+
+.close-dialog {
+  background: #1b0024 !important;
+  color: #ffffff !important;
+  border-color: #bf00ff !important;
+}
+
+.detail-photo {
+  background: #22002c !important;
+}
+
+dt {
+  color: #d8c7df !important;
+}
+
+dd {
+  color: #ffffff !important;
+}
+
+dl > div {
+  border-top-color: #54205f !important;
+}
+
+/* LINKS + FOOTER */
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #bf00ff !important;
+}
+
+.footer,
+.shop-footer {
+  background: #120018 !important;
+  border-top-color: #54205f !important;
+}
+
+.footer-bottom {
+  border-top-color: #54205f !important;
+}
+
