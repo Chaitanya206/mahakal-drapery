@@ -921,3 +921,41 @@ body[data-page="contact"] .header {
 .footer .brand-lockup .brand-name {
   text-transform: uppercase !important;
 }.header .brand-lockup .brand-name,.footer .brand-lockup .brand-name{ text-transform:uppercase!important; }
+.header .brand-lockup .brand-name,.footer .brand-lockup .brand-name{font-size:2.1rem!important;}
+.header .brand-lockup .brand-name,.footer .brand-lockup .brand-name{font-size:1.7rem!important;}
+
+/* ===== BRAND + HERO TYPOGRAPHY ===== */
+
+.header .brand-lockup .brand-name,
+.footer .brand-lockup .brand-name {
+  font-family: var(--serif) !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.03em !important;
+}
+
+.header .brand-lockup .brand-name {
+  font-size: 1.7rem !important;
+}
+
+.footer .brand-lockup .brand-name {
+  font-size: 1.7rem !important;
+}/* ===== HERO NEON GRADIENT ===== */
+
+.intro-row h1,
+.hero h1,
+main > h1 {
+  background: linear-gradient(
+    105deg,
+    #f3d98b 0%,
+    #e7b94f 38%,
+    #d99524 68%,
+    #f1cf78 100%
+  ) !important;
+
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+
+  filter: drop-shadow(0 0 12px rgba(220, 160, 45, .16)) !important;
+}
