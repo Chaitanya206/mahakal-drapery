@@ -1,0 +1,10 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { readFile, access } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+const read=path=>readFile(new URL('../'+path,import.meta.url),'utf8');
+test('original public stylesheet is preserved byte for byte',async()=>{assert.equal(await read('styles.css'),await read('dist/styles.css'));});
+test('both public pages preserve original branding and public layout classes',async()=>{for(const name of ['index.html','contact.html']){const current=await read(name),original=await read('dist/'+name);for(const marker of ['brand-lockup','md-mark','shop-footer','footer-top','header-nav']){assert.ok(current.includes(marker));assert.ok(original.includes(marker));}assert.ok(current.includes('src/public.js'));}});
+test('combined build configuration includes public, detail and admin entries',async()=>{const config=await read('vite.config.js');for(const entry of ['index.html','contact.html','admin.html','product.html'])assert.ok(config.includes(entry));for(const file of ['src/admin/auth.tsx','src/admin/main.tsx','src/admin/product-form.tsx','src/admin/inventory.tsx','src/admin/categories.tsx','src/admin/settings.tsx','src/api.ts','src/images.ts'])await access(new URL('../'+file,import.meta.url));});
+test('blank environment template contains only the two required variable names',async()=>{assert.equal(await read('.env.example'),'VITE_SUPABASE_URL=\nVITE_SUPABASE_PUBLISHABLE_KEY=\n');});
+test('public client cannot inherit the admin session',async()=>{const source=await read('src/api.ts');assert.match(source,/persistSession:false,autoRefreshToken:false,detectSessionInUrl:false/);assert.match(source,/storageKey:'mahakal-public'/);});

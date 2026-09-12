@@ -1,0 +1,38 @@
+[
+  {
+    "id": "MD-001",
+    "name": "The Royal Maharaja",
+    "category": "Traditional",
+    "mrp": 2490,
+    "image": "assets/maharaja.webp",
+    "imageAlt": "Royal blue and gold Maharaja costume on a mannequin",
+    "description": "A regal blue silhouette with ornate gold detailing. A striking character costume for cultural performances and the stage.",
+    "sizes": "Adult · S, M, L, XL",
+    "includes": "Sherwani, trousers and turban",
+    "material": "Brocade-look fabric with decorative trim"
+  },
+  {
+    "id": "MD-002",
+    "name": "The Classical Dancer",
+    "category": "Dance",
+    "mrp": 3290,
+    "image": "assets/dancer.webp",
+    "imageAlt": "Magenta and emerald classical Indian dance costume on a mannequin",
+    "description": "Rich jewel tones and a signature pleated fan. A traditional dance-inspired ensemble with beautiful stage presence.",
+    "sizes": "Adult · S, M, L",
+    "includes": "Blouse, bottom and pleated fan panel",
+    "material": "Silk-look fabric with decorative gold borders"
+  },
+  {
+    "id": "MD-003",
+    "name": "The Pirate Captain",
+    "category": "Fancy dress",
+    "mrp": 1890,
+    "image": "assets/pirate.webp",
+    "imageAlt": "Burgundy and black pirate captain costume with a tricorn hat on a mannequin",
+    "description": "A dramatic burgundy coat and a classic tricorn hat. Made for larger-than-life characters and a little theatrical adventure.",
+    "sizes": "Adult · S, M, L, XL",
+    "includes": "Coat, shirt, trousers, belt and hat",
+    "material": "Velvet-look fabric and woven polyester"
+  }
+]
