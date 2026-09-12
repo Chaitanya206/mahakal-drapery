@@ -249,7 +249,7 @@ body[data-page="contact"] .header {
 }
 
 
-/* ===== HEADER WHATSAPP — MATCH NAV ===== */
+/* ===== HEADER WHATSAPP ï¿½ MATCH NAV ===== */
 
 .header-whatsapp {
   font-size: 0.72rem !important;
@@ -258,3 +258,26 @@ body[data-page="contact"] .header {
   margin-right: 22px !important;
 }
 
+/* ===== MATCH HEADER FONT SIZES ===== */
+
+.header-nav .header-link,
+.header-note {
+  font-size: 0.92rem !important;
+  line-height: 1.2 !important;
+}
+
+.header-nav .header-link {
+  font-weight: 500 !important;
+}
+
+.header-note {
+  font-weight: 500 !important;
+}
+
+.header .brand-name {
+  font-size: 1.55rem !important;
+}
+
+.header .brand-subtitle {
+  font-size: 9px !important;
+}
