@@ -79,3 +79,45 @@ dialog::backdrop{background:rgba(10,0,14,.82)}
   color: #d8c7df !important;
 }
 
+
+/* ===== UNIFIED HEADER ===== */
+
+header,
+.header,
+.header-inner,
+.header-nav,
+.header-brand,
+.header-right {
+  background: #26002f !important;
+  background-color: #26002f !important;
+}
+
+.header {
+  border-bottom: 1px solid #54205f !important;
+}
+
+.brand-symbol,
+.brand-mark {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.header,
+.header a,
+.header-link,
+.brand-name,
+.header-note {
+  color: #ffffff !important;
+}
+
+.header-nav .header-link[aria-current="page"] {
+  color: #bf00ff !important;
+  border-bottom-color: #bf00ff !important;
+}
+
+.header-nav .header-link:hover {
+  color: #bf00ff !important;
+  border-bottom-color: #bf00ff !important;
+}
+
