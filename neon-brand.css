@@ -1,47 +1,54 @@
-/* Mahakal Drapery — subtle neon atmosphere */
+/* Mahakal Drapery — neon purple brand background */
 :root{
   --accent:#bf00ff;
   --neon:#bf00ff;
-  --paper:#fbf9fc;
+  --paper:#bf00ff;
+}
+
+html,body{
+  background:#bf00ff;
 }
 
 body{
-  background:
-    radial-gradient(900px 520px at 8% 8%, rgba(191,0,255,.075), transparent 62%),
-    radial-gradient(760px 500px at 92% 28%, rgba(191,0,255,.055), transparent 64%),
-    radial-gradient(900px 620px at 50% 100%, rgba(191,0,255,.045), transparent 68%),
-    var(--paper);
+  color:#fff;
 }
 
-/* A soft ambient glow, not a loud cyber/neon effect. */
+/* Keep the purple as the dominant canvas while adding a soft light variation. */
 body::before{
   content:"";
   position:fixed;
   inset:0;
   pointer-events:none;
   z-index:-1;
-  background:radial-gradient(circle at 50% 20%, rgba(191,0,255,.025), transparent 42%);
+  background:
+    radial-gradient(circle at 15% 10%, rgba(255,255,255,.10), transparent 28%),
+    radial-gradient(circle at 85% 25%, rgba(255,255,255,.07), transparent 30%),
+    radial-gradient(circle at 50% 100%, rgba(70,0,100,.12), transparent 42%);
 }
 
 .brand-symbol{
-  background:linear-gradient(135deg, #bf00ff, #d94dff);
-  box-shadow:0 0 24px rgba(191,0,255,.22);
+  background:#fff;
+  color:#bf00ff;
+  box-shadow:0 0 28px rgba(255,255,255,.28);
 }
 
-.tiny-star{color:#bf00ff}
+.tiny-star{color:#fff}
 
 .category-button[aria-pressed=true]{
-  background:#bf00ff;
-  box-shadow:0 5px 22px rgba(191,0,255,.16);
+  background:#fff;
+  color:#bf00ff;
+  border-color:#fff;
+  box-shadow:0 5px 25px rgba(255,255,255,.16);
 }
 
 .product-open:hover .card-arrow{
-  background:#bf00ff;
-  border-color:#bf00ff;
+  background:#fff;
+  color:#bf00ff;
+  border-color:#fff;
 }
 
 button:focus-visible,a:focus-visible{
-  outline-color:#bf00ff;
+  outline-color:#fff;
 }
 
 @media(prefers-reduced-motion:reduce){
