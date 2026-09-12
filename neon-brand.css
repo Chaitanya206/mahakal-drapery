@@ -28,45 +28,18 @@ main.wrap{padding-top:0!important;padding-bottom:0!important}
 .brand-lockup .brand-name {
   display: flex !important;
   flex-direction: column !important;
-  align-items: flex-start !important;
-  justify-content: center !important;
-
+  flex: 0 0 auto !important;
   width: max-content !important;
   min-width: max-content !important;
   max-width: none !important;
-
-  margin: 0 !important;
-  padding: 0 !important;
-
   white-space: nowrap !important;
-  word-break: normal !important;
-  overflow-wrap: normal !important;
-
-  font-family: Arial, Helvetica, sans-serif !important;
-  font-size: 1.55rem !important;
-  font-weight: 700 !important;
-  line-height: 1 !important;
-  letter-spacing: -0.03em !important;
-
-  color: #ffffff !important;
 }
 
-/* REAL subtitle created by shop.js */
 .brand-lockup .brand-subtitle {
   display: block !important;
-
-  margin: 6px 0 0 0 !important;
-  padding: 0 !important;
-
-  font-family: Arial, Helvetica, sans-serif !important;
   font-size: 9px !important;
-  font-weight: 600 !important;
-  line-height: 1 !important;
-  letter-spacing: 0.22em !important;
-
-  text-transform: uppercase !important;
-  white-space: nowrap !important;
-
+  letter-spacing: .2em !important;
+  margin-top: 5px !important;
   color: #bf00ff !important;
 }
 
@@ -89,4 +62,112 @@ main.wrap{padding-top:0!important;padding-bottom:0!important}
     font-size: 7px !important;
     letter-spacing: 0.18em !important;
   }
+}
+
+/* =========================================================
+   VISIT & CONTACT PAGE — DARK NEON PURPLE
+   ========================================================= */
+
+body[data-page="contact"] {
+  background: #120018 !important;
+  color: #ffffff !important;
+}
+
+/* Remove the pale demo/banner strip */
+body[data-page="contact"] .sample-banner {
+  display: none !important;
+}
+
+/* Contact page hero */
+body[data-page="contact"] main {
+  background: transparent !important;
+  color: #ffffff !important;
+}
+
+body[data-page="contact"] .eyebrow,
+body[data-page="contact"] .contact-eyebrow {
+  color: #bf00ff !important;
+}
+
+body[data-page="contact"] h1,
+body[data-page="contact"] h2,
+body[data-page="contact"] h3 {
+  color: #ffffff !important;
+}
+
+body[data-page="contact"] p {
+  color: #d8c7df !important;
+}
+
+/* Contact information cards */
+body[data-page="contact"] .contact-method,
+body[data-page="contact"] .contact-card,
+body[data-page="contact"] .contact-details {
+  background: #1b0024 !important;
+  color: #ffffff !important;
+  border-color: #54205f !important;
+}
+
+/* Contact labels / numbers */
+body[data-page="contact"] .contact-number {
+  color: #bf00ff !important;
+}
+
+body[data-page="contact"] .contact-method h3 {
+  color: #ffffff !important;
+}
+
+body[data-page="contact"] .contact-method a,
+body[data-page="contact"] .text-link,
+body[data-page="contact"] [data-contact-phone] a,
+body[data-page="contact"] [data-contact-email] a,
+body[data-page="contact"] [data-contact-whatsapp] {
+  color: #ffffff !important;
+}
+
+body[data-page="contact"] .contact-method a:hover,
+body[data-page="contact"] .text-link:hover,
+body[data-page="contact"] [data-contact-whatsapp]:hover {
+  color: #bf00ff !important;
+}
+
+/* WhatsApp */
+body[data-page="contact"] [data-contact-whatsapp]:not([hidden]) {
+  display: inline-block !important;
+  margin-top: 10px !important;
+  color: #bf00ff !important;
+  font-weight: 600 !important;
+}
+
+/* Inputs / form areas */
+body[data-page="contact"] input,
+body[data-page="contact"] textarea,
+body[data-page="contact"] select {
+  background: #1b0024 !important;
+  color: #ffffff !important;
+  border-color: #54205f !important;
+}
+
+body[data-page="contact"] input::placeholder,
+body[data-page="contact"] textarea::placeholder {
+  color: #a98db2 !important;
+}
+
+body[data-page="contact"] input:focus,
+body[data-page="contact"] textarea:focus,
+body[data-page="contact"] select:focus {
+  border-color: #bf00ff !important;
+  outline: 2px solid rgba(191, 0, 255, .25) !important;
+}
+
+/* Directions / map link */
+body[data-page="contact"] [data-directions] {
+  color: #bf00ff !important;
+}
+
+/* Footer remains consistent */
+body[data-page="contact"] .shop-footer,
+body[data-page="contact"] .footer {
+  background: #120018 !important;
+  border-top-color: #54205f !important;
 }
