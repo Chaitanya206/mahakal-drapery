@@ -358,3 +358,40 @@ textarea:focus {
 .catalog-note p {
   color: #d8c7df !important;
 }
+
+/* DARK NEON PURPLE — CATALOGUE CARDS ONLY */
+.category-tile {
+  background: #1b0024 !important;
+  color: #ffffff !important;
+  border: 1px solid #54205f !important;
+  box-shadow: none;
+}
+
+.category-tile:hover {
+  background: #26002f !important;
+  border-color: #bf00ff !important;
+  box-shadow: 0 0 20px rgba(191, 0, 255, 0.18);
+}
+
+.category-tile .tile-code {
+  color: #bf00ff !important;
+}
+
+.category-tile h3 {
+  color: #ffffff !important;
+}
+
+.category-tile .tile-age,
+.category-tile .tile-range {
+  color: #d8c7df !important;
+}
+
+.category-tile .tile-bottom {
+  color: #ffffff !important;
+  border-top-color: #54205f !important;
+}
+
+.category-tile:hover .tile-bottom {
+  color: #bf00ff !important;
+}
+
