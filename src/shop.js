@@ -1,4 +1,4 @@
-/* Shared branding, footer and contact details. Edit the shop object in catalog.js. */
+﻿/* Shared branding, footer and contact details. Edit the shop object in catalog.js. */
 
 export function renderShop(config) {
   'use strict';
@@ -77,7 +77,7 @@ export function renderShop(config) {
 
   text(
     '[data-services-inline]',
-    (shop.services || []).join(' · ')
+    (shop.services || []).join(' Â· ')
   );
 
   document
@@ -110,7 +110,7 @@ export function renderShop(config) {
 
   if (document.body.dataset.page === 'contact') {
     document.title =
-      config.brand + ' — Visit & Contact';
+      config.brand + ' â€” Visit & Contact';
   }
 
   document

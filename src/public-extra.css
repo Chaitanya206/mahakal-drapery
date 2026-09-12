@@ -295,3 +295,61 @@ body[data-page="contact"] .header {
   font-weight: 500 !important;
   line-height: 1.2 !important;
 }
+/* ===== HEADER SOCIAL LINKS ===== */
+
+.header-socials {
+  display: flex !important;
+  align-items: center !important;
+  gap: 18px !important;
+  margin-left: auto !important;
+  margin-right: 28px !important;
+}
+
+.header-social {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  font-size: 0.72rem !important;
+  font-weight: 500 !important;
+  line-height: 1 !important;
+}
+
+.header-social img {
+  width: 26px !important;
+  height: 26px !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+.header-social:hover {
+  color: #bf00ff !important;
+}
+
+.header-social:hover img {
+  transform: scale(1.06);
+}
+
+.header-social[data-contact-whatsapp][hidden],
+.header-social[data-instagram][hidden] {
+  display: none !important;
+}
+
+@media (max-width: 700px) {
+  .header-socials {
+    gap: 10px !important;
+    margin-right: 12px !important;
+  }
+
+  .header-social span {
+    display: none !important;
+  }
+
+  .header-social img {
+    width: 24px !important;
+    height: 24px !important;
+  }
+}
+
