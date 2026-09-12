@@ -251,33 +251,47 @@ body[data-page="contact"] .header {
 
 /* ===== HEADER WHATSAPP � MATCH NAV ===== */
 
-.header-whatsapp {
-  font-size: 0.72rem !important;
-  font-weight: 500 !important;
-  letter-spacing: 0.02em !important;
-  margin-right: 22px !important;
+/* ===== FINAL HEADER TYPOGRAPHY ===== */
+
+.header .brand-lockup .brand-name {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 1.55rem !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
 }
 
-/* ===== MATCH HEADER FONT SIZES ===== */
+/* Small subtitle under the brand */
+.header .brand-lockup .brand-subtitle {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 9px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.22em !important;
+  line-height: 1 !important;
+  margin-top: 6px !important;
+  color: #bf00ff !important;
+}
 
-.header-nav .header-link,
-.header-note {
-  font-size: 0.92rem !important;
+/* Navigation */
+.header .header-nav .header-link {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 0.95rem !important;
+  font-weight: 500 !important;
   line-height: 1.2 !important;
 }
 
-.header-nav .header-link {
+/* WhatsApp */
+.header .header-whatsapp {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 0.85rem !important;
   font-weight: 500 !important;
+  line-height: 1.2 !important;
+  margin-right: 22px !important;
 }
 
-.header-note {
+/* Right-side shop label */
+.header .header-note {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 0.85rem !important;
   font-weight: 500 !important;
-}
-
-.header .brand-name {
-  font-size: 1.55rem !important;
-}
-
-.header .brand-subtitle {
-  font-size: 9px !important;
+  line-height: 1.2 !important;
 }
