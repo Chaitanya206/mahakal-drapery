@@ -353,3 +353,50 @@ body[data-page="contact"] .header {
   }
 }
 
+/* ===== FINAL HEADER SIZE + LOGO FIX ===== */
+
+/* ===== FINAL HEADER SCALE ===== */
+
+.header .md-mark {
+  width: 70px !important;
+  height: 70px !important;
+  flex: 0 0 70px !important;
+}
+
+.header .md-mark img {
+  width: 70px !important;
+  height: 70px !important;
+  max-width: 70px !important;
+  max-height: 70px !important;
+  object-fit: contain !important;
+}
+
+/* Bigger shop name */
+.header .brand-lockup .brand-name {
+  font-size: 1.9rem !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+}
+
+/* Keep subtitle small */
+.header .brand-lockup .brand-subtitle {
+  font-size: 9px !important;
+  margin-top: 7px !important;
+  letter-spacing: .22em !important;
+}
+
+/* Keep navigation readable but not oversized */
+.header .header-nav .header-link {
+  font-size: 1rem !important;
+}
+
+/* Social icons */
+.header .header-social img {
+  width: 32px !important;
+  height: 32px !important;
+}
+
+/* Small social labels */
+.header .header-social {
+  font-size: .78rem !important;
+}
