@@ -17,70 +17,76 @@ main.wrap{padding-top:0!important;padding-bottom:0!important}
 .brand-symbol,.brand-mark,.md-mark{background:transparent!important;background-color:transparent!important;box-shadow:none!important}
 
 /* RENTAL SHOP subtitle — applies to BOTH the top header and footer brand lockup. */
-.brand-name{display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;line-height:1.05!important;white-space:nowrap!important}
-.brand-name::after{content:"RENTAL SHOP"!important;display:block!important;margin-top:5px!important;font-family:var(--sans)!important;font-size:.62rem!important;font-weight:600!important;letter-spacing:.16em!important;text-transform:uppercase!important;color:#bf00ff!important;line-height:1!important}
+/* ===== BRAND LOCKUP ===== */
 
-.rule{background:#bf00ff!important;box-shadow:0 0 12px rgba(191,0,255,.45)!important}.tiny-star{color:#bf00ff!important}
-.header-link{border-bottom-color:#bf00ff}.header-nav .header-link[aria-current=page],.header-nav .header-link:hover{border-bottom-color:#fff}
-.intro-foot{border-color:var(--line)}
-.category-button{border-bottom-color:var(--line);color:var(--ink)}
-.category-button[aria-pressed=true]{background:#bf00ff;color:#17001e;box-shadow:0 0 22px rgba(191,0,255,.3)}
-.category-button:not([aria-pressed=true]):hover{background:#3a0a49}
-
-/* Category cards */
-.category-overview .category-tile{background:#1b0024!important;color:#fff!important;border:1px solid #54205f!important}
-.category-overview .category-tile:hover{background:#26002f!important;border-color:#bf00ff!important;box-shadow:0 0 22px rgba(191,0,255,.22)!important}
-.category-overview .category-tile .tile-code{color:#bf00ff!important}.category-overview .category-tile h3{color:#fff!important}.category-overview .category-tile .tile-age,.category-overview .category-tile .tile-range{color:#d8c7df!important}.category-overview .category-tile .tile-bottom{color:#fff!important}
-
-@media(max-width:600px){.wrap{padding-left:18px!important;padding-right:18px!important}.header{padding-top:11px!important;padding-bottom:11px!important}.brand-name::after{font-size:.54rem!important;margin-top:4px!important}}
-@media(prefers-reduced-motion:reduce){body::before{display:none}}
-
-/* FINAL BRAND LOCKUP FIX */
-
-.header .brand-lockup,
-.footer .brand-lockup {
+.brand-lockup {
   display: flex !important;
-  align-items: flex-start !important;
-  gap: 10px !important;
+  align-items: center !important;
+  gap: 12px !important;
 }
 
-.header .brand-lockup .brand-name,
-.footer .brand-lockup .brand-name {
-  display: grid !important;
-  grid-template-columns: 1fr !important;
-  grid-template-rows: auto auto !important;
+.brand-lockup .brand-name {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+
   width: max-content !important;
   min-width: max-content !important;
   max-width: none !important;
-  white-space: nowrap !important;
-  overflow: visible !important;
-  word-break: normal !important;
-  overflow-wrap: normal !important;
-  line-height: 1 !important;
+
   margin: 0 !important;
   padding: 0 !important;
-}
 
-.header .brand-lockup .brand-name::after,
-.footer .brand-lockup .brand-name::after {
-  content: "Rental Shop" !important;
-  display: block !important;
-  grid-row: 2 !important;
-  margin-top: 6px !important;
-  font-family: Arial, Helvetica, sans-serif !important;
-  font-size: 10px !important;
-  font-weight: 500 !important;
-  letter-spacing: 0.12em !important;
-  line-height: 1 !important;
-  text-transform: none !important;
-  color: #bf00ff !important;
   white-space: nowrap !important;
-  opacity: 1 !important;
-  visibility: visible !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 1.55rem !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  letter-spacing: -0.03em !important;
+
+  color: #ffffff !important;
 }
 
-.footer .brand-lockup .brand-name::after {
+/* REAL subtitle created by shop.js */
+.brand-lockup .brand-subtitle {
+  display: block !important;
+
+  margin: 6px 0 0 0 !important;
+  padding: 0 !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
   font-size: 9px !important;
+  font-weight: 600 !important;
+  line-height: 1 !important;
+  letter-spacing: 0.22em !important;
+
+  text-transform: uppercase !important;
+  white-space: nowrap !important;
+
+  color: #bf00ff !important;
+}
+
+/* Footer can be slightly smaller */
+.footer-brand .brand-name {
+  font-size: 1.35rem !important;
+}
+
+.footer-brand .brand-subtitle {
+  font-size: 8px !important;
   margin-top: 5px !important;
 }
 
+@media(max-width:600px) {
+  .brand-lockup .brand-name {
+    font-size: 1.25rem !important;
+  }
+
+  .brand-lockup .brand-subtitle {
+    font-size: 7px !important;
+    letter-spacing: 0.18em !important;
+  }
+}
