@@ -395,3 +395,95 @@ textarea:focus {
   color: #bf00ff !important;
 }
 
+
+/* ===== COMPACT HEADER + FOOTER ===== */
+
+.header {
+  min-height: 0 !important;
+  height: auto !important;
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
+  margin-bottom: 0 !important;
+}
+
+.header-inner {
+  min-height: 0 !important;
+  height: auto !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.brand-symbol,
+.brand-mark {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.header-nav {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.header-note {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Keep the whole header one consistent background */
+.header {
+  background: #120018 !important;
+}
+
+/* ===== COMPACT FOOTER ===== */
+
+.footer,
+.shop-footer {
+  padding-top: 24px !important;
+  padding-bottom: 0 !important;
+  margin-top: 32px !important;
+}
+
+.footer-top {
+  padding-top: 0 !important;
+  padding-bottom: 24px !important;
+}
+
+.footer-bottom {
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
+  min-height: 0 !important;
+}
+
+/* Remove excessive vertical gaps inside footer */
+.footer p,
+.footer h2,
+.footer h3,
+.footer > span {
+  margin-top: 0 !important;
+}
+
+.footer-column,
+.footer-brand,
+.footer-links,
+.footer-contact,
+.footer-address {
+  margin-top: 0 !important;
+}
+
+/* ===== LOGO BACKGROUND ===== */
+
+.brand-symbol,
+.brand-mark {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* ===== SAME BACKGROUND THROUGH HEADER/FOOTER ===== */
+
+.header,
+.footer,
+.shop-footer {
+  background-color: #120018 !important;
+}
+
