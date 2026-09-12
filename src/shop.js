@@ -9,7 +9,19 @@ export function renderShop(config) {
   socials.replaceChildren();
   for(const link of shop.social_links||[]){try{const url=new URL(link.url);if(url.protocol==='https:'){const a=document.createElement('a');a.href=url.href;a.textContent=link.label;a.target='_blank';a.rel='noopener noreferrer';socials.append(a);}}catch{}}
   const text = (selector, value) => document.querySelectorAll(selector).forEach(el => { el.textContent = value; });
-  text('[data-brand]', config.brand);
+
+  // Render the shop name plus a real, persistent subtitle in both logo lockups.
+  document.querySelectorAll('.brand-lockup .brand-name').forEach(el => {
+    el.replaceChildren();
+    el.append(document.createTextNode(config.brand));
+    const subtitle = document.createElement('span');
+    subtitle.className = 'brand-subtitle';
+    subtitle.textContent = 'Rental Shop';
+    el.append(subtitle);
+  });
+  // Keep any non-lockup brand fields as plain text.
+  document.querySelectorAll('[data-brand]:not(.brand-lockup .brand-name)').forEach(el => { el.textContent = config.brand; });
+
   text('[data-owner]', shop.owner || '');
   text('[data-services-inline]', (shop.services || []).join(' · '));
   document.querySelectorAll('[data-services]').forEach(el => {
